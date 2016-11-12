@@ -1,11 +1,17 @@
+/**
+ * Cannonball Web Stylesheet.
+ * Romain Huet
+ * @romainhuet
+ */
+
 body {
-    background: #ffedd3;
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 14px;
-    color: #00a69b;
-    text-align: center;
-    border-top: #ffedd3;
-    border-bottom: #ffedd3;
+  background: #00a69b;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  color: #00a69b;
+  text-align: center;
+  border-top: 3px solid #00a69b;
+  border-bottom: 3px solid #00a69b;
 }
 
 p {
@@ -293,9 +299,4 @@ footer p a {
   .twitter p {
     padding-bottom: 10px;
   }
-}
-img
- {
-    width: 200px;
-    height: 200px;
 }
