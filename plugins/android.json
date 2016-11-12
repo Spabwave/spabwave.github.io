@@ -63,6 +63,11 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "cordova-fabric-plugin": {
+            "FABRIC_API_KEY": "043bac88a594f58aa3f7ae9214bf9cea21738845",
+            "FABRIC_API_SECRET": "043bac88a594f58aa3f7ae9214bf9cea21738845",
+            "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },
     "dependent_plugins": {

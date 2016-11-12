@@ -517,6 +517,30 @@ module.exports = [
             "navigator.notification",
             "navigator"
         ]
+    },
+    {
+        "id": "cordova-fabric-plugin.FabricPlugin",
+        "file": "plugins/cordova-fabric-plugin/www/FabricPlugin.js",
+        "pluginId": "cordova-fabric-plugin",
+        "clobbers": [
+            "window.fabric.core"
+        ]
+    },
+    {
+        "id": "cordova-fabric-plugin.FabricAnswersPlugin",
+        "file": "plugins/cordova-fabric-plugin/www/FabricPlugin.Answers.js",
+        "pluginId": "cordova-fabric-plugin",
+        "clobbers": [
+            "window.fabric.Answers"
+        ]
+    },
+    {
+        "id": "cordova-fabric-plugin.FabricCrashlyticsPlugin",
+        "file": "plugins/cordova-fabric-plugin/www/FabricPlugin.Crashlytics.js",
+        "pluginId": "cordova-fabric-plugin",
+        "clobbers": [
+            "window.fabric.Crashlytics"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -542,7 +566,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "3.2.2",
     "cordova-plugin-statusbar": "2.1.3",
     "cordova-plugin-vibration": "2.1.2",
-    "cordova-plugin-whitelist": "1.2.2"
+    "cordova-plugin-whitelist": "1.2.2",
+    "cordova-fabric-plugin": "1.1.1"
 };
 // BOTTOM OF METADATA
 });

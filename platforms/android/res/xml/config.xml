@@ -62,6 +62,10 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="FabricPlugin">
+        <param name="android-package" value="com.sarriaroman.fabric.FabricPlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <name>Take Care</name>
     <description>
         Take Care is a health App.

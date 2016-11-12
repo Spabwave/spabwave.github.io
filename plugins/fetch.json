@@ -167,5 +167,17 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-fabric-plugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sarriaroman/FabricPlugin",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {
+            "FABRIC_API_KEY": "043bac88a594f58aa3f7ae9214bf9cea21738845",
+            "FABRIC_API_SECRET": "043bac88a594f58aa3f7ae9214bf9cea21738845"
+        }
     }
 }
