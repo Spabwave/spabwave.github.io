@@ -68,6 +68,12 @@
             "FABRIC_API_KEY": "043bac88a594f58aa3f7ae9214bf9cea21738845",
             "FABRIC_API_SECRET": "043bac88a594f58aa3f7ae9214bf9cea21738845",
             "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "cordova-plugin-digits": {
+            "FABRIC_API_KEY": "043bac88a594f58aa3f7ae9214bf9cea21738845",
+            "FABRIC_CONSUMER_KEY": "0EQYX62hn41a9UBwOoUifjHou",
+            "FABRIC_CONSUMER_SECRET": "MAiebh4II5NB24Ohd1gf517qdDfXxCVF2Z68xfecrS6LYwlgJ8",
+            "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },
     "dependent_plugins": {

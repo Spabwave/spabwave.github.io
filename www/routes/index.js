@@ -1,8 +1,4 @@
-/**
- * Cannonball Web Server.
- * Romain Huet
- * @romainhuet
- */
+
 
 var express = require('express');
 var router = express.Router();
@@ -92,3 +88,7 @@ router.post('/digits', function (req, res) {
 });
 
 module.exports = router;
+
+
+// cordova.digit.plugin
+

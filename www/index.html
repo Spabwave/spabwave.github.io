@@ -6,26 +6,9 @@
   <link rel="stylesheet" href="public/stylesheets/normalize.css">
   <link rel="stylesheet" href="public/stylesheets/cannonball.css">
   <link rel="icon" href="public/images/icon.png" type="image/png">
-  <link rel="apple-touch-icon" href="/images/touch-icon.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/images/touch-icon-ipad.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/images/touch-icon-iphone-retina.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/images/touch-icon-ipad-retina.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@cannonballapp">
-  <meta name="twitter:creator" content="@romainhuet">
-  <meta name="twitter:title" content="Cannonball, the magnetic poetry game">
-  <meta name="twitter:app:name:iphone" content="Cannonball">
-  <meta name="twitter:app:id:iphone" content="929750075">
-  <meta name="twitter:app:name:ipad" content="Cannonball">
-  <meta name="twitter:app:id:ipad" content="929750075">
-  <meta name="twitter:app:name:googleplay" content="Cannonball">
-  <meta name="twitter:app:id:googleplay" content="io.fabric.samples.cannonball">
-  <meta name="twitter:description" content="Cannonball is the fun way to create and share stories and poems on your phone. Cannonball was created to demo Digits and Fabric, the easiest way to build the best apps.">
-  <meta name="twitter:image" content="http://cannonballapp.io/images/cannonball-twitter-card.png">
-  <meta name="og:title" content="Cannonball, the magnetic poetry game">
-  <meta name="og:description" content="Cannonball is the fun way to create and share stories and poems on your phone. Cannonball was created to demo Digits and Fabric, the easiest way to build the best apps.">
-  <meta name="og:image" content="http://cannonballapp.io/images/cannonball-twitter-card.png">
+ 
+
+
 </head>
 <body>
   <div class="container">
@@ -36,6 +19,7 @@
           <h2>Take Care is your personal Health App.</h2>
         </header>
         <div class="digits">
+
           <button class="digits-button">Sign In with Phone</button>
           <p class="digits-note">This is a OTP based <a href="#">login system</a>.<br>It does not store your phone number. Feel free to try it!<br>.</p>
         </div>
@@ -53,7 +37,16 @@
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script id="digits-sdk" src="https://cdn.digits.com/1/sdk.js" async></script>
   <script src="public/javascripts/cannonball.js"></script>
- 
+ <script type="text/javascript">
+window.plugins.digits.authenticate(options,
+  (oAuthHeaders) => {
+    console.log(oAuthHeaders);
+  },
+  (error) => {
+    console.warn("[Digits]", "Login failed", error);
+  }
+);
+ </script>
   
 </body>
 </html>

@@ -16,6 +16,7 @@
       })
       .fail(function() {
         console.log('Digits failed to initialize.');
+
       });
 
     // Set a click event listener on the Digits button.

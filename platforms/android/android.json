@@ -91,6 +91,10 @@
                         {
                             "xml": "<feature name=\"FabricPlugin\"><param name=\"android-package\" value=\"com.sarriaroman.fabric.FabricPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Digits\"><param name=\"android-package\" value=\"com.jimmymakesthings.plugins.digits.CordovaDigits\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -151,11 +155,45 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"android-minSdkVersion\" value=\"10\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RECEIVE_SMS\" />",
+                            "count": 1
                         }
                     ],
                     "application": [
                         {
                             "xml": "<meta-data android:name=\"io.fabric.ApiKey\" android:value=\"043bac88a594f58aa3f7ae9214bf9cea21738845\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<meta-data android:name=\"com.crashlytics.ApiKey\" android:value=\"043bac88a594f58aa3f7ae9214bf9cea21738845\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<meta-data android:name=\"io.fabric.ApiKey\" android:value=\"043bac88a594f58aa3f7ae9214bf9cea21738845\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<meta-data android:name=\"io.fabric.ConsumerKey\" android:value=\"0EQYX62hn41a9UBwOoUifjHou\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<meta-data android:name=\"io.fabric.ConsumerSecret\" android:value=\"MAiebh4II5NB24Ohd1gf517qdDfXxCVF2Z68xfecrS6LYwlgJ8\" />",
                             "count": 1
                         }
                     ]
@@ -230,6 +268,12 @@
         "cordova-fabric-plugin": {
             "FABRIC_API_KEY": "043bac88a594f58aa3f7ae9214bf9cea21738845",
             "FABRIC_API_SECRET": "043bac88a594f58aa3f7ae9214bf9cea21738845",
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "cordova-plugin-digits": {
+            "FABRIC_API_KEY": "043bac88a594f58aa3f7ae9214bf9cea21738845",
+            "FABRIC_CONSUMER_KEY": "0EQYX62hn41a9UBwOoUifjHou",
+            "FABRIC_CONSUMER_SECRET": "MAiebh4II5NB24Ohd1gf517qdDfXxCVF2Z68xfecrS6LYwlgJ8",
             "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },
@@ -776,6 +820,14 @@
             "clobbers": [
                 "window.fabric.Crashlytics"
             ]
+        },
+        {
+            "id": "cordova-plugin-digits.Digits",
+            "file": "plugins/cordova-plugin-digits/www/digits.js",
+            "pluginId": "cordova-plugin-digits",
+            "clobbers": [
+                "window.plugins.digits"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -800,6 +852,7 @@
         "cordova-plugin-statusbar": "2.1.3",
         "cordova-plugin-vibration": "2.1.2",
         "cordova-plugin-whitelist": "1.2.2",
-        "cordova-fabric-plugin": "1.1.1"
+        "cordova-fabric-plugin": "1.1.1",
+        "cordova-plugin-digits": "1.1.2"
     }
 }

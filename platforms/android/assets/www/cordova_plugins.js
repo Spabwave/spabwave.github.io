@@ -541,6 +541,14 @@ module.exports = [
         "clobbers": [
             "window.fabric.Crashlytics"
         ]
+    },
+    {
+        "id": "cordova-plugin-digits.Digits",
+        "file": "plugins/cordova-plugin-digits/www/digits.js",
+        "pluginId": "cordova-plugin-digits",
+        "clobbers": [
+            "window.plugins.digits"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -567,7 +575,8 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.1.3",
     "cordova-plugin-vibration": "2.1.2",
     "cordova-plugin-whitelist": "1.2.2",
-    "cordova-fabric-plugin": "1.1.1"
+    "cordova-fabric-plugin": "1.1.1",
+    "cordova-plugin-digits": "1.1.2"
 };
 // BOTTOM OF METADATA
 });

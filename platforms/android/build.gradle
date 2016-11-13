@@ -106,6 +106,7 @@ ext {
 
 // PLUGIN GRADLE EXTENSIONS START
 apply from: "cordova-fabric-plugin/helloworld-build-extras.gradle"
+apply from: "cordova-plugin-digits/helloworld-digits.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()

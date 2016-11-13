@@ -9,6 +9,9 @@
             </intent-filter>
         </activity>
         <meta-data android:name="io.fabric.ApiKey" android:value="043bac88a594f58aa3f7ae9214bf9cea21738845" />
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="043bac88a594f58aa3f7ae9214bf9cea21738845" />
+        <meta-data android:name="io.fabric.ConsumerKey" android:value="0EQYX62hn41a9UBwOoUifjHou" />
+        <meta-data android:name="io.fabric.ConsumerSecret" android:value="MAiebh4II5NB24Ohd1gf517qdDfXxCVF2Z68xfecrS6LYwlgJ8" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="23" />
@@ -24,4 +27,6 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <preference name="android-minSdkVersion" value="10" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
 </manifest>

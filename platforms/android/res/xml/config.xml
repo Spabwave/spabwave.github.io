@@ -108,4 +108,7 @@
     <preference name="auto-hide-splash-screen" value="false" />
     <preference name="ShowSplashScreenSpinner" value="true" />
     <preference name="SplashMaintainAspectRatio" value="true" />
+    <feature name="Digits">
+        <param name="android-package" value="com.jimmymakesthings.plugins.digits.CordovaDigits" />
+    </feature>
 </widget>
